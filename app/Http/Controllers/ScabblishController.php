@@ -9,7 +9,7 @@ class ScabblishController extends Controller
     public function index(){
         return 'View all the letters...';
     }
-    public function view($letter = null){
-         return 'You want the letter '.$letter;
+    public function show($letter = null){
+         return view('letter.show')->with(['letter'=>$letter]);
     }
 }

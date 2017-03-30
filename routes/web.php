@@ -11,7 +11,7 @@
 |
 */
 Route::get('/letters', 'ScabblishController@index');
-Route::get('/letters/{letter?}','ScabblishController@view');
+Route::get('/letters/{letter?}','ScabblishController@show');
 if(config('app.env')=='local'){
     Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 }
